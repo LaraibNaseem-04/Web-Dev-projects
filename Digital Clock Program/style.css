@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: black;
+    background-attachment: fixed;
+    background: linear-gradient(135deg, #1c1c1c, #2b2b2b); 
+}
+
+#clock_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#clock {
+    font-family: "CustomFont";
+    font-size: 7rem; 
+    font-weight: bold;
+    text-align: center;
+    color: #FFBF00;
+    text-shadow: 
+        0 0 5px #FFBF00,
+        0 0 10px #FFBF00; 
+    box-shadow: 0 4px 15px rgba(255, 191, 0, 0.5); 
+    padding: 20px; 
+    border-radius: 10px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    transition: transform 0.2s ease; 
+}
+
+
+#clock:hover {
+    transform: scale(1.05); 
+}
+
+@font-face {
+    font-family: "CustomFont";
+    src: url("font/digital-7\ (italic).ttf") format('truetype'); 
+}
